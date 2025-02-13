@@ -1,6 +1,6 @@
 package br.com.pedro.aula1.exemploAnimais;
 
-public class Cachorro extends Animal {
+public class Cachorro extends Animal implements AdotavelInterface, Proibidos {
 
     @Override
     public void emitirSom(){
@@ -16,4 +16,18 @@ public class Cachorro extends Animal {
         System.out.println("Fazendo xixi no poste");
     }
 
+    @Override
+    public void proteger() {
+        System.out.println("Latir");
+    }
+
+    @Override
+    public void treinar() {
+
+    }
+
+    @Override
+    public void atacarPessoas() {
+
+    }
 }

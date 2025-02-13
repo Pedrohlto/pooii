@@ -1,22 +1,17 @@
 package br.com.pedro.aula1.exemploAnimais;
 
-import java.util.List;
-
 public class Pessoa {
 
     private String nome;
     private String telefone;
-    private Animal animal;
+    private AdotavelInterface adotavel;
 
-    public void adotar(Animal animal){
-        if (animal.isDisponivelParaAdocao()){
-            this.animal = animal;
-            animal.setDisponivelParaAdocao(false);
-        }
+    public void adotar(AdotavelInterface adotavel){
+        this.adotavel = this.adotavel;
     }
 
-    public Animal getAnimalAdotado(){
-        return this.animal;
+    public AdotavelInterface getAnimalAdotado(){
+        return this.adotavel;
     }
 
     public String getNome() {

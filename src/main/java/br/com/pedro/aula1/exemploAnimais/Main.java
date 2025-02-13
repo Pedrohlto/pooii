@@ -9,19 +9,24 @@ public class Main {
         gato.setDisponivelParaAdocao(true);
         gato.emitirSom();
 
+        Proibidos tubarao  = new Tubarao();
+
         Cachorro cachorro = new Cachorro();
         cachorro.setDisponivelParaAdocao(true);
         cachorro.setNome("Nome do Cachorro");
         cachorro.emitirSom();
 
+        Animal cobra = new Cobra();
+
         Pessoa pedro = new Pessoa();
         pedro.setNome("Pedro");
         pedro.setTelefone("11999999999");
-        pedro.adotar(gato);
+//        pedro.adotar(gato);
         pedro.adotar(cachorro);
+//        pedro.adotar(cobra);
 
-        Animal adotado = pedro.getAnimalAdotado();
-        System.out.println("Nome do Animal adotado " + adotado.getNome());
+        AdotavelInterface adotado = pedro.getAnimalAdotado();
+//        System.out.println("Nome do Animal adotado " + adotado.getNome());
 //
 
 //        Animal cachorroLulu = new Animal();

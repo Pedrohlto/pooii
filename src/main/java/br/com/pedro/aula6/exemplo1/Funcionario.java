@@ -1,10 +1,11 @@
-package br.com.pedro.aula6;
+package br.com.pedro.aula6.exemplo1;
 
 public class Funcionario {
 
     private String nome;
     private String cargo;
     private double salarioBase;
+
 
     public Funcionario(String nome, String cargo, double salarioBase) {
         this.nome = nome;

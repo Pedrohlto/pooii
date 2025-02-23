@@ -1,6 +1,6 @@
 package br.com.pedro.aula7.exercicio;
 
-public class Desenvolvedor implements Funcionario {
+public class Desenvolvedor extends Funcionario {
     @Override
     public void trabalhar() {
         System.out.println("Desenvolvendo software...");
@@ -8,7 +8,7 @@ public class Desenvolvedor implements Funcionario {
 
     @Override
     public void baterPonto() {
-        System.out.println("Ponto registrado.");
+        throw new UnsupportedOperationException("Desenvolvedor não bate ponto.");
     }
 
     @Override

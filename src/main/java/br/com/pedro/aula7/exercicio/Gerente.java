@@ -1,6 +1,6 @@
 package br.com.pedro.aula7.exercicio;
 
-public class Gerente implements Funcionario {
+public class Gerente extends Funcionario {
     @Override
     public void trabalhar() {
         System.out.println("Gerenciando a equipe...");

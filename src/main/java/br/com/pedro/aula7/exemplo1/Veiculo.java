@@ -8,11 +8,8 @@ public class Veiculo {
         this.modelo = modelo;
     }
 
-    public void andar(){
-        System.out.println("Veiculo Andando");
+    public void metodoDeTeste(){
+        System.out.println("Printar algo");
     }
 
-    public void abastecer(){
-        System.out.println("Abastecendo");
-    }
 }
